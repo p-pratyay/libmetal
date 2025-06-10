@@ -18,6 +18,7 @@
 
 #include <metal/assert.h>
 #include "FreeRTOS.h"
+#include <stddef.h>
 #include "semphr.h"
 
 

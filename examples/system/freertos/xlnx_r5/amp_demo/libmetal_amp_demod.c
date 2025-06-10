@@ -134,8 +134,7 @@ int main(void)
 	Xil_ExceptionDisable();
 
 	/* Create the tasks */
-	stat = xTaskCreate(processing, ( const char * ) "HW",
-				1024, NULL, 2, &comm_task);
+	stat = xTaskCreate(processing, ( const char * ) "HW",1024, NULL, 2, &comm_task);
 	if (stat != pdPASS) {
 		LPERROR("Cannot create task\n");
 	} else {
